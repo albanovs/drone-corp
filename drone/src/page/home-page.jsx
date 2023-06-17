@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import drone from "../img/home/drone2.png";
 import drone2 from "../img/home/drone3.png";
-import drone3 from "../img/home/drone1.png";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import {
   AiOutlineWhatsApp,
@@ -14,7 +14,7 @@ import { RiTelegramLine } from "react-icons/ri";
 export const HomePage = () => {
   return (
     <div className="mx-auto">
-      <div className="bg-site w-full h-screen bg-cover text-white">
+      <div className="relative bg-site w-full h-screen bg-cover text-white">
         <header className="lg:flex hidden justify-between items-center lg:pl-20 lg:pr-20 w-full h-[90px] text-sm">
           <div className="text-white">LOGO</div>
           <nav className="w-[500px] flex justify-between">
@@ -37,11 +37,13 @@ export const HomePage = () => {
             </div>
           </div>
         </header>
-        <section className="w-full lg:pl-20 lg:pr-20 pl-0 pr-0">
+        <section className="w-full lg:pl-20 lg:pr-20 pt-[120px] lg:pt-0 pl-0 pr-0">
           <div>
             <div className="flex items-center lg:justify-around justify-center flex-col-reverse lg:flex-row mt-0 lg:mt-10">
-              <div className="text-center">
-                <h1 className="lg:text-[60px] text-[30px] font-bold">RUSROBODRON</h1>
+              <div className="text-center flex flex-col items-center">
+                <h1 className="lg:text-[60px] text-[30px] font-bold">
+                  RUSROBODRON
+                </h1>
                 <h1 className="lg:text-[20px] text-[12px] font-semibold text-[#FE390C]">
                   РОБОТЫ ПОМОГАЮТ ЛЮДЯМ!
                 </h1>
@@ -53,7 +55,7 @@ export const HomePage = () => {
                   Наши дроны вам может предложить решение ваших трудностей
                   исходя из ваших данных, что далеко не каждый может.
                 </h2>
-                <div className="border w-[160px] h-[40px] grid place-items-center mt-3 cursor-pointer bg-[#FE390C] transition-all hover:text-white">
+                <div className="rounded hover:scale-105 w-[160px] h-[40px] grid place-items-center mt-3 cursor-pointer bg-[#FE390C] transition-all hover:text-white">
                   Связаться с нами
                 </div>
               </div>
@@ -61,7 +63,7 @@ export const HomePage = () => {
                 <img src={drone} alt="" />
               </div>
             </div>
-            <div className="w-full flex flex-col items-end">
+            <div className="w-full flex lg:flex-col flex-row justify-center lg:items-end">
               <TiSocialInstagramCircular size={25} className="mt-2" />
               <AiOutlineWhatsApp size={25} className="mt-2" />
               <RiTelegramLine size={25} className="mt-2" />
