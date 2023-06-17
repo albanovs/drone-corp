@@ -87,7 +87,7 @@ export const HomePage = () => {
           </p>
         </p>
         <div className="flex gap-10 lg:gap-0 lg:justify-evenly items-center flex-col lg:flex-row text-sm text-center">
-          <div className="relative w-[330px] h-[330px] rounded shadow-xl border flex flex-col items-center">
+          <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">ПРИЛОЖЕНИЯ</h1>
             <div>
               <img src={drone2} width="200px" height="200px" alt="" />
@@ -102,7 +102,7 @@ export const HomePage = () => {
               <AiOutlineRight />
             </div>
           </div>
-          <div className="relative w-[330px] h-[330px] rounded shadow-xl border flex flex-col items-center">
+          <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">СТРОИТЕЛЬСТВО</h1>
             <div>
               <img src={drone2} width="200px" height="300px" alt="" />
@@ -117,7 +117,7 @@ export const HomePage = () => {
               <AiOutlineRight />
             </div>
           </div>
-          <div className="relative w-[330px] h-[330px] rounded shadow-xl border flex flex-col items-center">
+          <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">ЭЛЛЕКТРИЧЕСТВО</h1>
             <div>
               <img src={drone2} width="200" alt="" />
