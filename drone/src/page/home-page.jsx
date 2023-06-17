@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import drone from "../img/home/drone2.png";
-import drone2 from "../img/home/drone3.png";
+import drone2 from "../img/home/droneforcard.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import {
@@ -10,33 +10,13 @@ import {
   AiOutlineRight,
 } from "react-icons/ai";
 import { RiTelegramLine } from "react-icons/ri";
+import Header from "../components/header";
 
 export const HomePage = () => {
   return (
     <div className="mx-auto">
       <div className="relative bg-site w-full h-screen bg-cover text-white">
-        <header className="lg:flex hidden justify-between items-center lg:pl-20 lg:pr-20 w-full h-[90px] text-sm">
-          <div className="text-white">LOGO</div>
-          <nav className="w-[500px] flex justify-between">
-            <NavLink className="hover:text-[#FE390C] transition-all">
-              главная
-            </NavLink>
-            <NavLink className="hover:text-[#FE390C] transition-all">
-              услуги
-            </NavLink>
-            <NavLink className="hover:text-[#FE390C] transition-all">
-              о нас
-            </NavLink>
-            <NavLink className="hover:text-[#FE390C] transition-all">
-              контакты
-            </NavLink>
-          </nav>
-          <div className="flex items-center text-sm">
-            <div className="ml-3 border border-[#FE390C] p-2 rounded-sm cursor-pointer hover:bg-[#FE390C] transition-all hover:text-white text-[#FE390C]">
-              Связаться с нами
-            </div>
-          </div>
-        </header>
+        <Header />
         <section className="w-full lg:pl-20 lg:pr-20 pt-[120px] lg:pt-0 pl-0 pr-0">
           <div>
             <div className="flex items-center lg:justify-around justify-center flex-col-reverse lg:flex-row mt-0 lg:mt-10">
