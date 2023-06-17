@@ -1,5 +1,5 @@
 import React from 'react';
-import drone from "../img/home/drone3.png"
+import drones from "../img/home/drone3.png"
 import droneO from "../img/home/drone4.png"
 import droneOne from "../img/home/droneOne.png"
 import droneTwo from "../img/home/drone-two.png"
@@ -11,7 +11,7 @@ const About = () => {
         <div className="mx-auto">
             <div className="bg-black w-full h-96 min-h-full ">
                 <div className="flex justify-center items-center flex-col  pt-20 ">
-                    <img className="w-2/5" src={drone} alt=""/>
+                    <img className="w-2/5" src={drones} alt=""/>
                     <div className="absolute">
                         <h1 className="text-white text-6xl text font-bold">
                             СЕЛЬСКОЕ ХОЗЯЙСТВО</h1>
