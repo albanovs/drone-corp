@@ -7,5 +7,6 @@ body {
 }
 
 .slick-next:before, .slick-prev::after {
-    display: none;
+    color: #000 !important;
+    /*position: absolute;*/
 }
