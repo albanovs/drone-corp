@@ -5,8 +5,11 @@ import About from './page/about';
 function App() {
   return (
     <div className="App">
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/service" element={<About/>}/>
+      </Routes>
           <HomePage/>
-        <Portfolio/>
     </div>
   );
 }
