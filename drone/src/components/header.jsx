@@ -69,7 +69,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <div className={burger ? "fixed top-[580px] text-[10px] left-[145px] z-10" : "hidden"}>
+      <div className={burger ? "fixed top-[500px] text-[10px] left-[145px] z-10" : "hidden"}>
         <div className="flex items-center gap-2">
           <SiGooglemaps /> г.Санк-Петербург
         </div>
