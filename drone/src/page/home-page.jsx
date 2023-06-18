@@ -10,6 +10,7 @@ import {
   AiFillQuestionCircle,
   AiOutlineRight,
 } from "react-icons/ai";
+import { GiDeliveryDrone } from "react-icons/gi";
 import { RiTelegramLine } from "react-icons/ri";
 import Header from "../components/header";
 
@@ -52,7 +53,7 @@ export const HomePage = () => {
           </div>
         </section>
       </div>
-      <section className="w-full h-screen lg:pl-20 lg:pr-20 pl-0 pr-0">
+      <section className="w-full h-full pb-10 lg:pl-20 lg:pr-20 pl-0 pr-0">
         <div className="flex justify-center w-full pt-10">
           <AiFillQuestionCircle size={50} color="#FE390C" />
         </div>
@@ -78,7 +79,10 @@ export const HomePage = () => {
               Проверить и находить животных. Также следить за работой техники
               или бригады.
             </p>
-            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
+            <NavLink
+              to="/service"
+              className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105"
+            >
               Подробнее
               <AiOutlineRight />
             </NavLink>
@@ -93,7 +97,10 @@ export const HomePage = () => {
               контролировать строительство. Архитектура, геодезия и
               градостроительство.
             </p>
-            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
+            <NavLink
+              to="/service"
+              className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105"
+            >
               Подробнее
               <AiOutlineRight />
             </NavLink>
@@ -108,10 +115,29 @@ export const HomePage = () => {
               в озере, то у вас есть много задач который связанный с
               погружением.
             </p>
-            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] text-white hover:scale-105 transition-all">
+            <NavLink
+              to="/service"
+              className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] text-white hover:scale-105 transition-all"
+            >
               Подробнее
               <AiOutlineRight />
             </NavLink>
+          </div>
+        </div>
+      </section>
+      <section className="w-full h-screen lg:pl-20 lg:pr-20 bg-black/90">
+        <div>
+          <h1 className="text-white text-center flex flex-col items-center pt-10">
+            <GiDeliveryDrone size={50} /> Дроны - инновационное решение для
+            хорошего урожая
+          </h1>
+          <div className="flex justify-center mt-10">
+            <iframe
+              className="border flex"
+              src="https://www.youtube.com/embed/nYzSo8tOZFo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
