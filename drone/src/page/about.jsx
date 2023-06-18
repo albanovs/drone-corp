@@ -4,6 +4,7 @@ import mulitfac from "../img/about/mulitfac.png";
 import desic from "../img/about/desic.jpg";
 import opyl from "../img/about/opyl.jpg";
 import Header from "../components/header";
+import {GiMountains} from 'react-icons/gi'
 
 const About = () => {
   return (
@@ -15,10 +16,11 @@ const About = () => {
         </div>
       </div>
       <section className="">
-        <h1 className="text-center lg:pt-[100px] pb-10 lg:text-4xl font-bold">
+        <h1 className="text-center lg:pt-[100px] pb-1 pt-10 text-2xl lg:text-4xl font-bold flex flex-col items-center">
+          <GiMountains size={30} className="text-[#FE390C]"/>
           Сельское хозяйство
         </h1>
-        <div className="w-full flex lg:justify-around flex-col lg:flex-row items-center">
+        <div className="pt-10 pb-10 w-full flex lg:justify-around flex-col lg:flex-row items-center">
           <div>
             <img
               className="lg:w-96 w-60 border border-[#FE390C]"
@@ -43,7 +45,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex lg:justify-around flex-col-reverse lg:flex-row items-center">
+        <div className="pt-10 pb-10 w-full flex lg:justify-around flex-col-reverse lg:flex-row items-center">
           <div>
             <div className="flex justify-center lg:justify-start items-center">
               <h1 className="font-bold text-6xl text-[#FE390C]">02</h1>
@@ -68,7 +70,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="w-full flex lg:justify-around flex-col lg:flex-row items-center">
+        <div className="pt-10 pb-10 w-full flex lg:justify-around flex-col lg:flex-row items-center">
           <div>
             <img
               className="lg:w-96 w-60 border border-[#FE390C]"

@@ -5,6 +5,7 @@ import drone2 from "../img/home/droneforcard.png";
 import drone3 from "../img/home/droneOne.png";
 import drone4 from "../img/home/drone-two.png";
 import { TiSocialInstagramCircular } from "react-icons/ti";
+import {SiDrone} from 'react-icons/si'
 import {
   AiOutlineWhatsApp,
   AiFillQuestionCircle,
@@ -125,19 +126,22 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="w-full h-screen lg:pl-20 lg:pr-20 bg-black/90">
+      <section className="w-full h-screen lg:pl-20 lg:pr-20 bg-black/95">
         <div>
           <h1 className="text-white text-center flex flex-col items-center pt-10">
             <GiDeliveryDrone size={50} /> Дроны - инновационное решение для
             хорошего урожая
           </h1>
-          <div className="flex justify-center mt-10">
+          <div className="flex flex-col lg:flex-row items-center lg:justify-evenly justify-center mt-10">
             <iframe
-              className="border flex"
+              className="border lg:w-[600px] lg:h-[400px] w-[370px] h-[220px]"
               src="https://www.youtube.com/embed/nYzSo8tOZFo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+            <div className="text-white">
+              
+            </div>
           </div>
         </div>
       </section>
