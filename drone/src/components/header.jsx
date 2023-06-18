@@ -11,7 +11,7 @@ export default function Header() {
     setBurger(!burger);
   };
   return (
-    <div>
+    <div className="text-white">
       <div className="text-white lg:hidden fixed p-1 rounded-sm right-5 top-5 z-20">
         {burger ? (
           <AiOutlineClose

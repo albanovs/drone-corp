@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import drone from "../img/home/drone2.png";
 import drone2 from "../img/home/droneforcard.png";
-import { RxHamburgerMenu } from "react-icons/rx";
+import drone3 from "../img/home/droneOne.png";
+import drone4 from "../img/home/drone-two.png";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import {
   AiOutlineWhatsApp,
@@ -68,7 +69,7 @@ export const HomePage = () => {
         </p>
         <div className="flex gap-10 lg:gap-0 lg:justify-evenly items-center flex-col lg:flex-row text-sm text-center">
           <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
-            <h1 className="m-2 font-bold">ПРИЛОЖЕНИЯ</h1>
+            <h1 className="m-2 font-bold">ПОГРУЖЕНИЕ</h1>
             <div>
               <img src={drone2} width="200px" height="200px" alt="" />
             </div>
@@ -77,40 +78,40 @@ export const HomePage = () => {
               Проверить и находить животных. Также следить за работой техники
               или бригады.
             </p>
-            <div className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
+            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
               Подробнее
               <AiOutlineRight />
-            </div>
+            </NavLink>
           </div>
           <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">СТРОИТЕЛЬСТВО</h1>
             <div>
-              <img src={drone2} width="200px" height="300px" alt="" />
+              <img src={drone3} width="200px" height="300px" alt="" />
             </div>
             <p>
               Наши дроны смогут определить уровень участка а также
               контролировать строительство. Архитектура, геодезия и
               градостроительство.
             </p>
-            <div className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
+            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105">
               Подробнее
               <AiOutlineRight />
-            </div>
+            </NavLink>
           </div>
           <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">ЭЛЛЕКТРИЧЕСТВО</h1>
             <div>
-              <img src={drone2} width="200" alt="" />
+              <img src={drone4} width="200" alt="" />
             </div>
             <p>
               Если вы имеете рыбную ферму который находится в активной реке или
               в озере, то у вас есть много задач который связанный с
               погружением.
             </p>
-            <div className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] text-white hover:scale-105 transition-all">
+            <NavLink to='/service' className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] text-white hover:scale-105 transition-all">
               Подробнее
               <AiOutlineRight />
-            </div>
+            </NavLink>
           </div>
         </div>
       </section>
