@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiChat } from "react-icons/bi";
+import { SiGooglemaps } from "react-icons/si";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
 
 export default function Header() {
   const [burger, setBurger] = useState(false);
@@ -67,6 +69,14 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <div className={burger ? "fixed top-[700px] text-[10px] left-[145px] z-10" : "hidden"}>
+        <div className="flex items-center gap-2">
+          <SiGooglemaps /> г.Санк-Петербург
+        </div>
+        <div className="flex items-center gap-2">
+          <BsFillTelephoneInboundFill /> +7 981 737-60-07
+        </div>
+      </div>
     </div>
   );
 }
