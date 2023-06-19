@@ -1,11 +1,11 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { React } from "react";
+import { NavLink, Link } from "react-router-dom";
 import drone from "../img/home/drone2.png";
 import drone2 from "../img/home/droneforcard.png";
 import drone3 from "../img/home/droneOne.png";
 import drone4 from "../img/home/drone-two.png";
 import { TiSocialInstagramCircular } from "react-icons/ti";
-import {SiDrone} from 'react-icons/si'
+import { AiOutlineForward } from 'react-icons/ai'
 import {
   AiOutlineWhatsApp,
   AiFillQuestionCircle,
@@ -14,8 +14,10 @@ import {
 import { GiDeliveryDrone } from "react-icons/gi";
 import { RiTelegramLine } from "react-icons/ri";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export const HomePage = () => {
+
   return (
     <div className="mx-auto">
       <div className="relative bg-site w-full h-screen bg-cover text-white">
@@ -80,13 +82,12 @@ export const HomePage = () => {
               Проверить и находить животных. Также следить за работой техники
               или бригады.
             </p>
-            <NavLink
-              to="/service"
+            <Link to="#podvod"
               className="absolute bottom-6 w-[100] p-2 m-2 rounded flex items-center gap-1 cursor-pointer bg-[#FE390C] transition-all text-white hover:scale-105"
             >
               Подробнее
               <AiOutlineRight />
-            </NavLink>
+            </Link>
           </div>
           <div className="relative w-[330px] h-[330px] rounded shadow-2xl flex flex-col items-center">
             <h1 className="m-2 font-bold">СТРОИТЕЛЬСТВО</h1>
@@ -132,19 +133,46 @@ export const HomePage = () => {
             <GiDeliveryDrone size={50} /> Дроны - инновационное решение для
             хорошего урожая
           </h1>
-          <div className="flex flex-col lg:flex-row items-center lg:justify-evenly justify-center mt-10">
+          <div className="flex flex-col lg:flex-row gap-20 items-center lg:justify-evenly justify-center mt-10">
             <iframe
               className="border lg:w-[600px] lg:h-[400px] w-[370px] h-[220px]"
               src="https://www.youtube.com/embed/nYzSo8tOZFo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <div className="text-white">
-              
+            <div className="text-white lg:w-[600px] w-[400px] text-sm lg:text-[14px] flex flex-col gap-10">
+              <div className="border-b">
+                <h1 className="text-[#FE390C]">СЕЛЬСКОЕ ХОЗЯЙСТВО</h1>
+                <div className="flex justify-between f-full">
+                  <p className="text-[12px]">Данный модель дрона многофункциональна и проста в использовании. Оно сэкономит ваше время и силы.</p>
+                  <NavLink to="/service" className="text-[10px] text-[#FE390C] flex items-center gap-1">Подробнее <AiOutlineForward /></NavLink>
+                </div>
+              </div>
+              <div className="border-b">
+                <h1 className="text-[#FE390C]">МОНИТОРИНГ</h1>
+                <div className="flex justify-between w-full">
+                  <p className="text-[12px]">Мониторинг сотовой вышки, мониторинг строительства, Карьеры, Тепловизионное обследование.</p>
+                  <NavLink to="/service" className="text-[10px] text-[#FE390C] flex items-center gap-1">Подробнее <AiOutlineForward /></NavLink>
+                </div>
+              </div>
+              <div className="border-b">
+                <h1 className="text-[#FE390C]">БЕЗОПАСНОСТЬ</h1>
+                <div className="flex justif-between w-full">
+                  <p className="text-[12px]">Дроны в спасательных операциях уже не редкость. Но не все могут работать объективно и точно.</p>
+                  <NavLink to="/service" className="text-[10px] text-[#FE390C] flex items-center gap-1">Подробнее <AiOutlineForward /> </NavLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section className="w-full h-screen" id="podvod">
+        <div>
+          <h1 className="text-center">ПРЕИМУЩЕСТВА ОБРАЩЕНИЯ К УСЛУГАМ ПОДВОДНОГО ДРОНА</h1>
+            
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };
