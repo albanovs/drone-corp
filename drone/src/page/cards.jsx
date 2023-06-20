@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Cards () {
     return (
       <div>
-        <div class="flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
+        <div class="flex items-center justify-center flex-col bg-[#E5E5E5] w-full h-full">
           <div class="bg-[#F4F5FA] lg:p-10 pb-10 rounded-xl">
             <div class="flex flex-col justify-center items-center text-center">
               <div class="max-w-sm font-bold font-sans">
